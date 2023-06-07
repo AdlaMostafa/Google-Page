@@ -1,101 +1,233 @@
-/* Styling of navigation bar */
-#navdiv{
-    display:flex;
-    width:17%;
-    margin-left: 82%;
-    justify-content: space-around;
-    margin-top: 1%;
-    height:35px;
-  }
-  
-  nav img{
-    margin-top: 5px;
-  }
-  
-  #googleimg{
-    margin-top: 100px;
-  }
-  /* Removing underline from links*/
-  a{
-    margin-top: 8px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     text-decoration: none;
+    font-family: arial, sans-serif;
   }
   
-  button{
-    border-radius: 3px;
-    height:100%;
-    padding:5px 12px;
-    background-color: #4C87E1 ;
-    color:white;
-    border:none;
-  }
-  /* setting up size and border stle of search bar*/
-  #maindiv{
-  width:35%;
-  border-radius: 50px;
-  display: flex;
-  height:40px;
-  border:1px solid lightgrey;
-  }
-  
-  #inputspan{
-    width:80%;
-  }
-  span{
-    vertical-align: top;
-  }
-  span:first-child{
-    width:10%;
-    border-radius: 50px;
-    margin-top: 7px;
-  }
-  span:last-child{
-    width:10%;
-    border-radius: 50px;
-    margin-top: 7px;
-  }
-  
-  input{
-    height:100%;
-    width:100%;
-    border: none;
-    padding:0px;
-  }
-  
-  section{
+  body {
     display: flex;
-    margin-top: 2%;
-    width:23%;
-    justify-content: space-around;
-    margin-bottom: 2%;
-  }
-  section button{
-    padding:10px 12px;
-    background-color: lightgrey;
-    color:black;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
   }
   
-  ul{
+  /* start style navbar */
+  header ul {
     display: flex;
-    width: 30%;
-    padding-left: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0px;
+    margin-top: -24px;
     list-style: none;
-    justify-content: space-around;
-    margin: 6px;
   }
-  #Bottomdiv{
-    display:flex;
-    font-size: 12px;
-    margin-top: 3%;
+  
+  header ul li a {
+    font-size: 16px;
+    font-weight: 100;
+    display: inline-block;
+    color: white;
+    padding: 6px;
   }
-  #Bottomdiv span{
-    width:7%;
-    margin-left: 31%;
-  }
-  /*When hovered*/
-  a:hover{
+  
+  header ul li a:hover {
     text-decoration: underline;
   }
-  button:hover{
-    border: 1px solid gray;
+  
+  header ul li a .img2{
+    width: 60px;
+    padding: 4px;
+    margin-top: 7px;
+    transform: scale(0.3) ease;
   }
+  header ul li a .img1{
+    width: 20px;
+    padding-left: 0px;
+    margin-top: 6px;
+    transform: scale(0.3) ease;
+  }
+  header ul li a img:hover {
+    opacity:0.7;
+  }
+  
+  /* start style search field */
+  main .part1{
+    display: flex;
+  }
+  
+.part1 .logo {
+    display: block;
+    padding-left:33%;
+    align-items: center;
+    margin: 100px 400px 25px 0;
+  }
+  /* main .form{
+    width: 100%;
+    height: 50%;
+  } */
+  .part1 .searchBox {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    /* background-color: #252323; */
+  }
+  
+  .part1 .searchBox .searchin {
+    display: block;
+    border-radius: 35px;
+    padding: 16px;
+    font-size: 12px;
+    font-weight: 100;
+    width: 100%;
+    border-color:rgb(224, 224, 224) ;
+    background-color: #252323;
+  }
+  
+  .part1 .searchBox .searchic {
+    position: absolute;
+    width: 22px;
+    margin-top: 15px;
+    left: 16px;
+  }
+  
+  .part1 .searchBox .mic{
+   position: absolute; 
+   margin-bottom: 20px;
+   margin-top: 14px;
+   top: 0px;
+   width: 16px; 
+   right: 19px;
+  }
+  .part1 .searchBox .look{
+    position: absolute; 
+    margin-bottom: 20px;
+    margin-top: 14px;
+    padding-left:10px ;
+    top: -4px;
+    width: 40px; 
+    right: 40px;
+   }
+  .part1 .searchBox .searchbutt {
+    font-size: 15px;
+    font-weight: 50;
+    color: white;
+    border: none;
+    padding: 12px 16px;  
+    background-color: #29292f;
+    border-radius: 2px;
+    align-items: center; 
+    margin-right: 16px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .part1 .searchBox .searchbutt:hover{
+border: 1px solid wheat;
+  }
+  
+  main .language {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+  
+  main .language a {
+    margin-left: 6px;
+    color: white;
+  }  
+  /* start Create footer */
+  
+  footer {
+    background-color: #29292f;
+    margin-bottom: -20px;
+}
+ footer .anchors{
+    border-top: 1px solid #4b4a4a;
+    display: flex;
+  } 
+  footer p{
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 10px;
+    font-weight: 250;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  
+  footer .row1 a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 14px;
+    font-size: 14px;
+  }
+  footer .row1 a:hover{
+text-decoration: underline;
+  }
+  footer .row2 a{
+    display: flex;
+    color: #ffffff;
+    display: inline-block;
+    padding: 14px;
+    font-size: 14px;
+    justify-content:left;
+  }
+  footer .row2 a:hover{
+    text-decoration: underline;
+      }
+  footer .row2{
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .section-1 img.logo {
+      margin-top: 40px;
+    }
+  
+    .part1 .searchBox input.searchin {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .part1 .searchBox input.searchbutt{
+      margin-top: 24px;
+    }
+  
+    .part1 .language {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .part1 .logo{
+      margin-top: 60px;
+    }
+  
+.part1 .searchBox input.searchin {
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    .part1 .searchBox input.searchbutt {
+      margin-top: 26px;
+    }
+  
+    .part1 .language {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .part1 img.logo {
+      margin-top: 107px;
+    }
+  
+    .part1 .searchBox {
+      max-width: 580px;
+    }
+  }
+  
